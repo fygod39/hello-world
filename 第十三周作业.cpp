@@ -14,7 +14,7 @@ bool isPrime(int n)
 
 int main()
 {
-    int maxprime = 0, count = 0;
+    int count = 0;
     
     for(int i = 101; i < 10001; i+=2)
     {
@@ -36,7 +36,6 @@ int main()
         if(flag)
         {
             count++;
-            maxprime = i;
             printf("%4d ", i);
             if(count%5 == 0)
                 putchar('\n');
